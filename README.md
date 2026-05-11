@@ -12,6 +12,24 @@ This pipeline answers a real GRC problem: *security teams produce findings in da
 
 **Live result from my run:** 466 real Security Hub findings exported into 3 worksheets (`Executive Summary`, `Detailed Findings`, `Pivot Analysis`).
 
+![Executive Summary worksheet showing 466 findings broken down by severity, compliance status, and resource type](docs/executive-summary.png)
+
+### Real numbers from this run
+
+**Severity breakdown** (466 total):
+
+| Severity | Count | % |
+|---|---:|---:|
+| INFORMATIONAL | 368 | 79.0% |
+| MEDIUM | 55 | 11.8% |
+| LOW | 32 | 6.9% |
+| HIGH | 8 | 1.7% |
+| CRITICAL | 3 | 0.6% |
+
+**Compliance status:** 357 PASSED (76.6%) · 84 FAILED (18.0%) · 11 WARNING · 14 N/A
+
+**Top resource types affected:** `AwsAccount` (335) · `AwsS3Bucket` (48) · `AwsCloudFrontDistribution` (21) · `AwsIamAccount` (12) · `AwsGuardDutyDetector` (9)
+
 ## Architecture
 
 ```
