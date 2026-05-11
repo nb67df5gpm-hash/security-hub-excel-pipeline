@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Build artifacts
+*.zip
+lib/
+build/
+dist/
+
+# AWS / runtime
+response.json
+*.xlsx
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
